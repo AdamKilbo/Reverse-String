@@ -8,6 +8,6 @@ Practice C++
 
 Instructions:
 
-compile the .cpp file and run the exectuable. 
+Compile the .cpp file and run the executable. 
 
 Credit: Adam Kilbo
