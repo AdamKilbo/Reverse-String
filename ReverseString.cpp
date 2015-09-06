@@ -1,22 +1,21 @@
 #include <iostream>
-#include <cstring>
 using namespace std;
 
 int main()
 {
-	string input;
-	bool IsPalindrome = true;
-	cout << "Enter string to see if it is a palindrome: ";
+	string input, reverseInput;
+	cout << "Enter string to reverse: ";
 	cin >> input;
 
-	for (int i = 0; i < input.length()/2; i++)
+	reverseInput = input;
+
+	int j = 0;
+
+	for (int i = input.length() - 1; i >= 0; i--)
 	{
-		if (input[i] != input[input.length() - i - 1])
-			IsPalindrome = false;
+		reverseInput[j] = input[i];
+		j++;
 	}
 
-	if (IsPalindrome == true)
-		cout << "\nString " << input << " is a palindrome." << endl;
-	else
-		cout << "\nString " << input << " is not a palindrome." << endl;
+	cout << "The reverse of '" << input << "' is " << reverseInput << endl;
 }
