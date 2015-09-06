@@ -1,6 +1,6 @@
 # Reverse-String
 
-A small program that will determine if a given input string is a palindrome
+A small program that will tell the user what the reverse of an inputted string is.
 
 Goals:
 
